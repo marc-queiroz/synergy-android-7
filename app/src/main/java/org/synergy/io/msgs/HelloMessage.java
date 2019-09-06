@@ -50,8 +50,8 @@ public class HelloMessage extends Message {
 	            throw new InvalidMessageException ("Hello message not the right size: " + packetSize);
 	        }
 
-        	// Read in "Synergy" string
-        	mdin.readExpectedString("Synergy");
+        	// Read in "Barrier" string
+            mdin.readExpectedString("Barrier");
         	
         	// Read in the major and minor protocol versions
         	majorVersion = mdin.readShort ();
